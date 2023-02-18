@@ -59,11 +59,15 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-        backgroundColor: Colors.yellow,
+      floatingActionButton: SizedBox(
+        height: 100,
+        width: 100,
+        child: FloatingActionButton(
+          onPressed: _incrementCounter,
+          tooltip: 'Increment',
+          child: const Icon(Icons.add),
+          backgroundColor: Colors.yellow,
+        ),
       ),
     );
   }
